@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width=1.0">
+	<title>form</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class=" content">
+		
+		<div class="container">
+
+			<img src="logo.png" class="main">
+
+            <div class="head">
+			<li><a href="#"><img src="d.png" class="man"></a></li>
+			<li><a href="#"><img src="visa.png" class="man1"></a></li>
+			<li><a href="#"><img src="card.png" class="man"></a></li>
+			<li><a href="#"><img src="pay.png" class="man2"></a></li>
+             </div>
+           
+
+
+
+           <label class="container1">Private
+           <input type="radio" checked="checked" name="radio">
+           <span class="checkmark"></span>
+           </label>
+           <label class="container1">Business
+           <input type="radio" name="radio">
+           <span class="checkmark"></span>
+         </label>
+
+
+          <!-- <div class="some-class">
+        <input type="radio" class="radio" name="x" value="y" id="y">
+        <label for="y" >Private</label>
+        
+        <input type="radio" class="radio" name="x" value="z" id="z"  >
+        <label for="z">Business</label> -->
+        
+     
+
+      <!-- <div class="top">
+          <label class="label">Name</label>
+      	 <input type="text" name="Name"  class="input">
+        
+        <label class="label">Card number</label>
+      	<input type="text" name="Card number"  class="input1"  data-mask="0000 0000 0000 0000">
+      </div> -->
+
+
+      <div class="top">
+        <form>
+          <label class="label">Name</label>
+           
+             <span class="notvalid"><input type="text"  name="name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="input"></span>
+      </form>
+
+
+       <form>
+          <label class="label">Card number</label>
+           
+             <span class="notvalid"><input type="text"  name="name" pattern="{1,10}$"  class="input" data-mask="0000 0000 0000 0000"></span>
+      </form>
+
+
+         <!-- <input type="text" name="Name"  class="input"> -->
+        
+        <!-- <label class="label">Card number</label>
+        <input type="text" name="Card number"  class="input1"  data-mask="0000 0000 0000 0000"> -->
+      </div>
+
+
+        <div class="row">
+          <div class="col-lg-6">
+            <form>
+          <label class="label">Expiry date</label>
+           
+             <span class="notvalid"><input type="text"  name="name" pattern="{1,10}$" class="input" data-mask="00 / 00"></span>
+      </form>
+            <!-- <label class="label">Expiry date</label>
+        <li><input type="text" name="Expiry" data-mask="00 / 00"></li> -->
+         </div> 
+           
+
+           <div class="col-lg-6">
+
+            <form>
+          <label class="label1">CCV</label>
+           
+             <span class="notvalid"><input type="text"  name="name" pattern="{1,10}$" class="input" data-mask="000"></span>
+      </form>
+
+           <!--  <label class="label1">CCV</label>
+         <li><input type="text" name="CCV"  data-mask="000"></li> -->
+          </div>
+        </div>
+      
+
+<button>Pay 100 EUR</button>
+
+      </div>
+      <!-- <button>Pay 100 EUR</button> -->
+
+  </div>
+		</div>
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+  
+  <script>
+    
+    $('[name]').keyup(function(){
+
+    if($('form').valid()){
+         $(this).parent().removeClass().addClass('isvalid');
+     }else{
+             $(this).parent().removeClass().addClass('notvalid');
+        
+     }
+
+});
+  </script> -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+
+
+
+<!-- <div class="row row3">
+        <div class="col-md-6">
+               <label class="label3">Expiry date</label>
+           <input type="text" placeholder="12 / 34" data-mask="00 / 00">
+        </div>
+        <div class="col-md-6">
+          <label class="label3">CCV</label>
+           <input type="text" placeholder="123" data-mask="000">
+        </div>
+      </div> -->
+
+        <!-- <div class="last">
+          <label class="label">Expiry date</label>
+        <li><input type="text" name="Expiry" data-mask="00 / 00"></li> -->
+
+         <!-- <label class="label1">CCV</label>  -->
+        <!-- <li><input type="text" name="CCV"  data-mask="000"></li> -->
